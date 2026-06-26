@@ -10,8 +10,10 @@
     --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-black: #000;
     --color-white: #fff;
+    --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
     --font-weight-black: 900;
     --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
@@ -171,8 +173,17 @@
   .m-auto {
     margin: auto;
   }
+  .mt-\[20px\] {
+    margin-top: 20px;
+  }
+  .mt-\[25px\] {
+    margin-top: 25px;
+  }
   .mt-\[35px\] {
     margin-top: 35px;
+  }
+  .mt-\[40px\] {
+    margin-top: 40px;
   }
   .mt-\[50px\] {
     margin-top: 50px;
@@ -198,6 +209,9 @@
   .table {
     display: table;
   }
+  .h-\[42px\] {
+    height: 42px;
+  }
   .h-\[45px\] {
     height: 45px;
   }
@@ -215,6 +229,9 @@
   }
   .w-\[30px\] {
     width: 30px;
+  }
+  .w-\[42px\] {
+    width: 42px;
   }
   .w-\[45px\] {
     width: 45px;
@@ -248,6 +265,9 @@
   }
   .w-\[250px\] {
     width: 250px;
+  }
+  .w-\[300px\] {
+    width: 300px;
   }
   .w-max {
     width: max-content;
@@ -297,6 +317,9 @@
   .gap-\[10px\] {
     gap: 10px;
   }
+  .gap-\[14px\] {
+    gap: 14px;
+  }
   .gap-\[15px\] {
     gap: 15px;
   }
@@ -324,6 +347,12 @@
   .rounded-\[20px\] {
     border-radius: 20px;
   }
+  .rounded-\[35px\] {
+    border-radius: 35px;
+  }
+  .rounded-full {
+    border-radius: calc(infinity * 1px);
+  }
   .rounded-xl {
     border-radius: var(--radius-xl);
   }
@@ -338,17 +367,26 @@
   .border-\[\#1A1A1A\] {
     border-color: #1A1A1A;
   }
+  .border-\[\#1E90FF\] {
+    border-color: #1E90FF;
+  }
   .border-\[\#141414\] {
     border-color: #141414;
   }
   .bg-\[\#0A84FF\] {
     background-color: #0A84FF;
   }
+  .bg-\[\#0B0B0F\] {
+    background-color: #0B0B0F;
+  }
   .bg-\[\#0D0D0D\] {
     background-color: #0D0D0D;
   }
   .bg-\[\#1B1B1B\] {
     background-color: #1B1B1B;
+  }
+  .bg-\[\#1E90FF\] {
+    background-color: #1E90FF;
   }
   .bg-\[\#111111\] {
     background-color: #111111;
@@ -377,6 +415,15 @@
   .p-\[20px\] {
     padding: 20px;
   }
+  .p-\[40px\] {
+    padding: 40px;
+  }
+  .px-\[25px\] {
+    padding-inline: 25px;
+  }
+  .py-\[10px\] {
+    padding-block: 10px;
+  }
   .py-\[40px\] {
     padding-block: 40px;
   }
@@ -398,8 +445,14 @@
   .text-\[14px\] {
     font-size: 14px;
   }
+  .text-\[15px\] {
+    font-size: 15px;
+  }
   .text-\[16px\] {
     font-size: 16px;
+  }
+  .text-\[17px\] {
+    font-size: 17px;
   }
   .text-\[18px\] {
     font-size: 18px;
@@ -419,9 +472,16 @@
   .text-\[30px\] {
     font-size: 30px;
   }
+  .text-\[36px\] {
+    font-size: 36px;
+  }
   .leading-\[24px\] {
     --tw-leading: 24px;
     line-height: 24px;
+  }
+  .leading-\[30px\] {
+    --tw-leading: 30px;
+    line-height: 30px;
   }
   .font-black {
     --tw-font-weight: var(--font-weight-black);
@@ -430,6 +490,14 @@
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
+  }
+  .font-extrabold {
+    --tw-font-weight: var(--font-weight-extrabold);
+    font-weight: var(--font-weight-extrabold);
+  }
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
   }
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
@@ -453,8 +521,14 @@
   .text-\[\#A1A1AA\] {
     color: #A1A1AA;
   }
+  .text-\[\#B3B3B3\] {
+    color: #B3B3B3;
+  }
   .text-\[\#C0C0C0\] {
     color: #C0C0C0;
+  }
+  .text-\[\#C4C4C4\] {
+    color: #C4C4C4;
   }
   .text-\[\#D1D5DB\] {
     color: #D1D5DB;
@@ -474,6 +548,17 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .duration-300 {
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
+  }
+  .hover\:bg-\[\#111827\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #111827;
+      }
+    }
   }
   .md\:mt-0 {
     @media (width >= 48rem) {
@@ -520,9 +605,19 @@
       width: 60px;
     }
   }
+  .md\:w-\[470px\] {
+    @media (width >= 48rem) {
+      width: 470px;
+    }
+  }
   .md\:w-\[500px\] {
     @media (width >= 48rem) {
       width: 500px;
+    }
+  }
+  .md\:w-\[600px\] {
+    @media (width >= 48rem) {
+      width: 600px;
     }
   }
   .md\:flex-row {
@@ -680,6 +775,10 @@
   inherits: false;
   initial-value: solid;
 }
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -687,6 +786,7 @@
       --tw-leading: initial;
       --tw-font-weight: initial;
       --tw-outline-style: solid;
+      --tw-duration: initial;
     }
   }
 }
